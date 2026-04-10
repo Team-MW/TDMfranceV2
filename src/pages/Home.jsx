@@ -26,7 +26,6 @@ const Home = () => {
           >
             <h1 style={{ marginBottom: '0rem' }}>TDM FRANCE</h1>
             <h1 className="highlight-red" style={{ fontSize: '4.5rem', marginBottom: '0.5rem' }}>ERADICATION<br />INSECTICIDE</h1>
-            <h3 className="specialiste-tag">- TON SPECIALISTE -</h3>
 
             <div className="whatsapp-bar" onClick={() => window.open('https://wa.me/33784819003')}>
               <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WA" width="24" />
@@ -72,6 +71,68 @@ const Home = () => {
                   <p>{service.description}</p>
                 </motion.div>
               </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="cta-strip">
+        <div className="container cta-flex">
+          <h3>Demandez votre devis gratuit en 48h</h3>
+          <button className="cta-button" onClick={() => window.open('https://wa.me/33784819003')}>
+            FAIRE UNE DEMANDE
+          </button>
+        </div>
+      </section>
+
+      <section className="testimonials" style={{ padding: '8rem 0', background: 'var(--dark-bg)' }}>
+        <div className="container">
+          <div className="section-title">
+            <h2>Avis <span className="accent">Clients</span></h2>
+          </div>
+          <div className="services-grid">
+            {[
+              {
+                name: "Claire M.",
+                city: "Toulouse",
+                text: "« J’avais des moisissures récurrentes dans ma salle de bain malgré plusieurs nettoyages. L’équipe de TDM FRANCE est intervenue rapidement, a diagnostiqué l’origine du problème et a tout traité de façon durable. Deux mois après, plus aucune trace, et l’air est beaucoup plus sain. »"
+              },
+              {
+                name: "Sophie R.",
+                city: "Colomiers",
+                text: "« Entreprise très professionnelle ! Les techniciens ont pris le temps d’expliquer chaque étape du traitement contre les moisissures. Ils ont également donné des conseils de prévention pour éviter que ça revienne. Très rassurant et efficace. »"
+              },
+              {
+                name: "Marc L.",
+                city: "Ramonville-Saint-Agne",
+                text: "« Excellent service ! J’ai contacté TDM FRANCE pour des moisissures dans ma cave. Intervention rapide, résultats visibles immédiatement et aucune odeur désagréable après le traitement. Entreprise de confiance. »"
+              },
+              {
+                name: "Jean-Paul D.",
+                city: "Blagnac",
+                text: "« Suite à un dégât des eaux, j’ai fait appel à TDM FRANCE pour la déshumidification et la désinfection de mon appartement. Travail sérieux, devis clair et respecté, et surtout un suivi avec rapport détaillé. Je recommande vivement. »"
+              }
+            ].map((avis, index) => (
+              <motion.div 
+                key={index}
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                className="service-card"
+                style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}
+              >
+                <div>
+                  <div className="stars" style={{ marginBottom: '1rem', display: 'flex', gap: '2px' }}>
+                    {[...Array(5)].map((_, i) => <Star key={i} size={16} fill="var(--primary-green)" color="var(--primary-green)" />)}
+                  </div>
+                  <p style={{ fontStyle: 'italic', marginBottom: '1.5rem', color: 'var(--text-white)' }}>{avis.text}</p>
+                </div>
+                <div>
+                  <h4 style={{ color: 'var(--primary-green)', marginBottom: '0.2rem' }}>{avis.name}</h4>
+                  <p style={{ fontSize: '0.9rem', color: 'var(--text-gray)' }}>{avis.city}</p>
+                </div>
+              </motion.div>
             ))}
           </div>
         </div>

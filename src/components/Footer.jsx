@@ -1,15 +1,76 @@
 import React from 'react'
-import { MapPin } from 'lucide-react'
+import { Link } from 'react-router-dom'
+import { MapPin, Phone, Mail, Facebook, Instagram, Linkedin, ShieldCheck } from 'lucide-react'
 
 const Footer = () => {
   return (
-    <footer style={{ padding: '4rem 0', borderTop: '1px solid rgba(255,255,255,0.05)', backgroundColor: '#050505' }}>
-      <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '2rem' }}>
-        <div className="logo">TDM <span>FRANCE</span></div>
-        <p style={{ color: 'var(--text-gray)' }}>&copy; 2026 TDM France - Tous droits réservés.</p>
-        <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'center' }}>
-          <MapPin size={20} /> Toulouse & Alentours
-          <a href="mailto:contact@tdm-france.com" className="accent">contact@tdm-france.com</a>
+    <footer className="main-footer">
+      <div className="container footer-grid">
+        {/* Brand Section */}
+        <div className="footer-col brand">
+          <Link to="/" className="logo">
+            TDM <span>FRANCE</span>
+          </Link>
+          <p className="footer-tagline">
+            Experts en dératisation et désinsectisation à Toulouse. 
+            Protection radicale et durable de votre environnement.
+          </p>
+          <div className="social-links">
+            <a href="#" className="social-icon"><Facebook size={20} /></a>
+            <a href="#" className="social-icon"><Instagram size={20} /></a>
+            <a href="#" className="social-icon"><Linkedin size={20} /></a>
+          </div>
+        </div>
+
+        {/* Links Section */}
+        <div className="footer-col">
+          <h4>Nos Services</h4>
+          <ul>
+            <li><Link to="/deratisation">Dératisation</Link></li>
+            <li><Link to="/desinsectisation">Désinsectisation</Link></li>
+            <li><Link to="/punaises-de-lit">Punaises de lit</Link></li>
+            <li><Link to="/traitement-nuisibles">Traitement Nuisibles</Link></li>
+          </ul>
+        </div>
+
+        {/* Sectors Section */}
+        <div className="footer-col">
+          <h4>Secteurs</h4>
+          <ul>
+            <li><MapPin size={14} /> Toulouse Centre</li>
+            <li><MapPin size={14} /> Blagnac</li>
+            <li><MapPin size={14} /> Colomiers</li>
+            <li><MapPin size={14} /> Tournefeuille</li>
+            <li><MapPin size={14} /> Muret</li>
+          </ul>
+        </div>
+
+        {/* Contact Section */}
+        <div className="footer-col contact-col">
+          <h4>Contact Direct</h4>
+          <div className="contact-item">
+            <Phone size={18} className="accent" />
+            <a href="tel:+33784819003">+33 7 84 81 90 03</a>
+          </div>
+          <div className="contact-item">
+            <Mail size={18} className="accent" />
+            <a href="mailto:contact@tdm-france.com">contact@tdm-france.com</a>
+          </div>
+          <div className="availability">
+            <ShieldCheck size={18} className="accent" />
+            <span>Intervention 7j/7 - 24h/24</span>
+          </div>
+        </div>
+      </div>
+
+      <div className="footer-bottom">
+        <div className="container bottom-content">
+          <p>&copy; 2026 TDM France - Tous droits réservés.</p>
+          <div className="legal-links">
+            <a href="#">Mentions Légales</a>
+            <a href="#">Politique de Confidentialité</a>
+            <a href="#">Cookies</a>
+          </div>
         </div>
       </div>
     </footer>
