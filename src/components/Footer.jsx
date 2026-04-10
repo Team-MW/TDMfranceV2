@@ -67,7 +67,7 @@ const Footer = () => {
         <div className="container bottom-content">
           <p>&copy; 2026 TDM France - Tous droits réservés.</p>
           <div className="legal-links">
-            <a href="#">Mentions Légales</a>
+            <Link to="/mentions-legales">Mentions Légales</Link>
             <a href="#">Politique de Confidentialité</a>
             <a href="#">Cookies</a>
           </div>

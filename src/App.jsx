@@ -6,6 +6,7 @@ import Home from './pages/Home'
 import Deratisation from './pages/Deratisation'
 import Desinsectisation from './pages/Desinsectisation'
 import PunaisesDeLit from './pages/PunaisesDeLit'
+import MentionsLegales from './pages/MentionsLegales'
 import ScrollToTop from './components/ScrollToTop'
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
             <Route path="/deratisation" element={<Deratisation />} />
             <Route path="/desinsectisation" element={<Desinsectisation />} />
             <Route path="/punaises-de-lit" element={<PunaisesDeLit />} />
+            <Route path="/mentions-legales" element={<MentionsLegales />} />
           </Routes>
         </main>
         <Footer />
