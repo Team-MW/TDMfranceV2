@@ -2,32 +2,53 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://tdmfrance.fr/</loc>
-    <lastmod>2026-04-10</lastmod>
+    <lastmod>2026-04-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://tdmfrance.fr/deratisation</loc>
-    <lastmod>2026-04-10</lastmod>
+    <lastmod>2026-04-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tdmfrance.fr/desinsectisation</loc>
-    <lastmod>2026-04-10</lastmod>
+    <lastmod>2026-04-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tdmfrance.fr/punaises-de-lit</loc>
-    <lastmod>2026-04-10</lastmod>
+    <lastmod>2026-04-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tdmfrance.fr/mentions-legales</loc>
-    <lastmod>2026-04-10</lastmod>
+    <lastmod>2026-04-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
+  <!-- City Pages SEO -->
+  <url><loc>https://tdmfrance.fr/secteur/toulouse</loc><lastmod>2026-04-13</lastmod><priority>0.6</priority></url>
+  <url><loc>https://tdmfrance.fr/secteur/balma</loc><lastmod>2026-04-13</lastmod><priority>0.6</priority></url>
+  <url><loc>https://tdmfrance.fr/secteur/blagnac</loc><lastmod>2026-04-13</lastmod><priority>0.6</priority></url>
+  <url><loc>https://tdmfrance.fr/secteur/colomiers</loc><lastmod>2026-04-13</lastmod><priority>0.6</priority></url>
+  <url><loc>https://tdmfrance.fr/secteur/tournefeuille</loc><lastmod>2026-04-13</lastmod><priority>0.6</priority></url>
+  <url><loc>https://tdmfrance.fr/secteur/ramonville</loc><lastmod>2026-04-13</lastmod><priority>0.6</priority></url>
+  <url><loc>https://tdmfrance.fr/secteur/muret</loc><lastmod>2026-04-13</lastmod><priority>0.6</priority></url>
+  <url><loc>https://tdmfrance.fr/secteur/cugnaux</loc><lastmod>2026-04-13</lastmod><priority>0.6</priority></url>
+  <url><loc>https://tdmfrance.fr/secteur/saint-orens</loc><lastmod>2026-04-13</lastmod><priority>0.6</priority></url>
+  <url><loc>https://tdmfrance.fr/secteur/castanet</loc><lastmod>2026-04-13</lastmod><priority>0.6</priority></url>
+  <url><loc>https://tdmfrance.fr/secteur/lunion</loc><lastmod>2026-04-13</lastmod><priority>0.6</priority></url>
+  <url><loc>https://tdmfrance.fr/secteur/portet-sur-garonne</loc><lastmod>2026-04-13</lastmod><priority>0.6</priority></url>
+  <url><loc>https://tdmfrance.fr/secteur/revel</loc><lastmod>2026-04-13</lastmod><priority>0.6</priority></url>
+  <url><loc>https://tdmfrance.fr/secteur/auterive</loc><lastmod>2026-04-13</lastmod><priority>0.6</priority></url>
+  <url><loc>https://tdmfrance.fr/secteur/villefranche</loc><lastmod>2026-04-13</lastmod><priority>0.6</priority></url>
+  <url><loc>https://tdmfrance.fr/secteur/grenade</loc><lastmod>2026-04-13</lastmod><priority>0.6</priority></url>
+  <url><loc>https://tdmfrance.fr/secteur/plaisance-du-touch</loc><lastmod>2026-04-13</lastmod><priority>0.6</priority></url>
+  <url><loc>https://tdmfrance.fr/secteur/frouzins</loc><lastmod>2026-04-13</lastmod><priority>0.6</priority></url>
+  <url><loc>https://tdmfrance.fr/secteur/seysses</loc><lastmod>2026-04-13</lastmod><priority>0.6</priority></url>
+  <url><loc>https://tdmfrance.fr/secteur/launaguet</loc><lastmod>2026-04-13</lastmod><priority>0.6</priority></url>
 </urlset>

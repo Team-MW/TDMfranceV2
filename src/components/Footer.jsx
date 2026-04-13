@@ -37,11 +37,11 @@ const Footer = () => {
         <div className="footer-col">
           <h4>Secteurs</h4>
           <ul>
-            <li><MapPin size={14} /> Toulouse Centre</li>
-            <li><MapPin size={14} /> Blagnac</li>
-            <li><MapPin size={14} /> Colomiers</li>
-            <li><MapPin size={14} /> Tournefeuille</li>
-            <li><MapPin size={14} /> Muret</li>
+            <li><MapPin size={14} className="accent" /> <Link to="/secteur/toulouse">Toulouse</Link></li>
+            <li><MapPin size={14} className="accent" /> <Link to="/secteur/blagnac">Blagnac</Link> / <Link to="/secteur/colomiers">Colomiers</Link></li>
+            <li><MapPin size={14} className="accent" /> <Link to="/secteur/muret">Muret</Link></li>
+            <li><MapPin size={14} className="accent" /> <Link to="/secteur/balma">Balma</Link></li>
+            <li><MapPin size={14} className="accent" /> <Link to="/secteur/tournefeuille">Tournefeuille</Link></li>
           </ul>
         </div>
 
@@ -65,7 +65,13 @@ const Footer = () => {
 
       <div className="footer-bottom">
         <div className="container bottom-content">
-          <p>&copy; 2026 TDM France - Tous droits réservés.</p>
+          <p>
+            &copy; 2026 TDM France - Tous droits réservés. 
+            <span style={{ marginLeft: '1rem', opacity: 0.6 }}>|</span>
+            <a href="https://microdidact.com/" target="_blank" rel="noopener noreferrer" style={{ marginLeft: '1rem', transition: 'var(--transition-smooth)' }}>
+              Réalisé par <span style={{ color: 'var(--primary-green)', fontWeight: '700' }}>microdidact</span>
+            </a>
+          </p>
           <div className="legal-links">
             <Link to="/mentions-legales">Mentions Légales</Link>
             <a href="#">Politique de Confidentialité</a>

@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { Bug, Rat, Star, MessageSquare } from 'lucide-react'
+import { Bug, Rat, Star, MessageSquare, MapPin } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
 const Home = () => {
@@ -76,12 +76,87 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="cta-strip">
-        <div className="container cta-flex">
-          <h3>Demandez votre devis gratuit en 48h</h3>
-          <button className="cta-button" onClick={() => window.open('https://wa.me/33784819003')}>
-            FAIRE UNE DEMANDE
-          </button>
+      <section className="cta-modern">
+        <div className="container">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="cta-flex-container"
+          >
+            <div className="cta-left">
+              <h3>Demandez votre devis gratuit en 48h</h3>
+              <p>Une urgence ? Un projet ? Intervention rapide garantie en Haute-Garonne.</p>
+            </div>
+            <div className="cta-right">
+              <button className="cta-btn-refined" onClick={() => window.open('https://wa.me/33784819003')}>
+                FAIRE UNE DEMANDE
+              </button>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      <section className="intervention-zone" style={{ padding: '8rem 0', background: 'var(--dark-surface)' }}>
+        <div className="container">
+          <div className="section-title">
+            <h2>Zone <span className="accent">d'intervention</span></h2>
+            <p style={{ marginTop: '1rem', color: 'var(--text-gray)' }}>
+              Nous intervenons rapidement dans toute la Haute-Garonne (31) 24h/24 et 7j/7.
+            </p>
+          </div>
+          
+          <div className="intervention-grid">
+            <motion.div 
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="map-container"
+            >
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d369871.2173163155!2d1.0118501328014073!3d43.58169123847424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a95f9fd5157833%3A0x306f170cf3275b0!2sHaute-Garonne!5e0!3m2!1sfr!2sfr!4v1700000000000!5m2!1sfr!2sfr" 
+                width="100%" 
+                height="450" 
+                style={{ border: 0, borderRadius: '20px' }} 
+                allowFullScreen="" 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Carte d'intervention Haute-Garonne"
+              ></iframe>
+            </motion.div>
+
+            <motion.div 
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="cities-list"
+            >
+              <h3>Villes desservies en <span className="accent">priorité</span> :</h3>
+              <div className="cities-grid">
+                {[
+                  { name: "Toulouse", id: "toulouse" }, { name: "Balma", id: "balma" },
+                  { name: "Blagnac", id: "blagnac" }, { name: "Colomiers", id: "colomiers" },
+                  { name: "Tournefeuille", id: "tournefeuille" }, { name: "Ramonville", id: "ramonville" },
+                  { name: "Muret", id: "muret" }, { name: "Cugnaux", id: "cugnaux" },
+                  { name: "Saint-Orens", id: "saint-orens" }, { name: "Castanet", id: "castanet" },
+                  { name: "L'Union", id: "lunion" }, { name: "Portet-sur-Garonne", id: "portet-sur-garonne" },
+                  { name: "Revel", id: "revel" }, { name: "Auterive", id: "auterive" },
+                  { name: "Villefranche-de-L.", id: "villefranche" }, { name: "Grenade", id: "grenade" },
+                  { name: "Plaisance-du-Touch", id: "plaisance-du-touch" }, 
+                  { name: "Frouzins", id: "frouzins" }, { name: "Seysses", id: "seysses" },
+                  { name: "Launaguet", id: "launaguet" }
+                ].map((city, index) => (
+                  <Link key={index} to={`/secteur/${city.id}`} className="city-tag">
+                    <MapPin size={14} className="accent" />
+                    <span>{city.name}</span>
+                  </Link>
+                ))}
+              </div>
+              <p className="plus-info">
+                Et dans tout le département de la <strong>Haute-Garonne (31)</strong>.
+              </p>
+            </motion.div>
+          </div>
         </div>
       </section>
 
