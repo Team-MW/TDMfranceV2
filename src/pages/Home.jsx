@@ -3,7 +3,10 @@ import { motion } from 'framer-motion'
 import { Bug, Rat, Star, MessageSquare, MapPin } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
+import { useNavigate } from 'react-router-dom'
+
 const Home = () => {
+  const navigate = useNavigate()
   const services = [
     { title: 'DÉRATISATION', icon: <Rat size={32} />, path: '/deratisation', description: 'Solutions rapides pour rats, souris et rongeurs.' },
     { title: 'DÉSINSECTISATION', icon: <Bug size={32} />, path: '/desinsectisation', description: 'Élimination des blattes, cafards et fourmis.' },
@@ -89,7 +92,7 @@ const Home = () => {
               <p>Une urgence ? Un projet ? Intervention rapide garantie en Haute-Garonne.</p>
             </div>
             <div className="cta-right">
-              <button className="cta-btn-refined" onClick={() => window.open('https://wa.me/33784819003')}>
+              <button className="cta-btn-refined" onClick={() => navigate('/contact')}>
                 FAIRE UNE DEMANDE
               </button>
             </div>

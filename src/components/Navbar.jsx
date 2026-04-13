@@ -9,7 +9,7 @@ const Navbar = () => {
     <nav className={isOpen ? 'nav-open' : ''}>
       <div className="container nav-content">
         <Link to="/" className="logo" onClick={() => setIsOpen(false)}>
-          TDM <span>FRANCE</span> <span className="logo-small">DERATISATION</span>
+          TDM <span>FRANCE</span>
         </Link>
         
         {/* Mobile Toggle */}
@@ -22,6 +22,7 @@ const Navbar = () => {
           <Link to="/deratisation" onClick={() => setIsOpen(false)}>Dératisation</Link>
           <Link to="/desinsectisation" onClick={() => setIsOpen(false)}>Désinsectisation</Link>
           <Link to="/punaises-de-lit" onClick={() => setIsOpen(false)}>Punaises de lit</Link>
+          <Link to="/contact" onClick={() => setIsOpen(false)}>Contact</Link>
           
           <div className="mobile-only-contact">
              <a href="tel:+33784819003" className="whatsapp-bar">
