@@ -38,9 +38,7 @@ const Humidite = () => {
             transition={{ duration: 0.8 }}
             className="hero-content-mini"
           >
-            <div className="badge-premium" style={{ marginBottom: '1rem', display: 'inline-block', padding: '0.5rem 1rem', background: 'rgba(46, 204, 113, 0.2)', border: '1px solid var(--primary-green)', borderRadius: '50px', fontSize: '0.8rem', fontWeight: 'bold', color: 'var(--primary-green)' }}>
-              HAUTE-GARONNE & ALENTOURS
-            </div>
+
             <h1>TRAITEMENT & <span className="accent">DÉSINFECTION</span></h1>
             <p>
               Intervention experte à Toulouse et ses alentours pour éradiquer 
