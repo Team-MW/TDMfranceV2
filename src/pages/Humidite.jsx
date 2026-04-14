@@ -28,20 +28,19 @@ const Humidite = () => {
       {/* Hero Section */}
       <section className="service-hero-premium">
         <div className="hero-bg">
-          <img src="/hero-humidite.png" alt="Traitement Humidité et Moisissures Toulouse" />
+          <img src="/hero-humidite.png" alt="Traitement Humidité et Moisissures Professionnel" />
           <div className="hero-overlay"></div>
         </div>
         <div className="container">
-          <motion.div 
-            initial={{ opacity: 0, y: 30 }} 
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             className="hero-content-mini"
           >
-
             <h1>TRAITEMENT & <span className="accent">DÉSINFECTION</span></h1>
             <p>
-              Intervention experte à Toulouse et ses alentours pour éradiquer 
+              Intervention experte pour éradiquer
               définitivement l'humidité, les moisissures et assainir votre air intérieur.
             </p>
             <div style={{ marginTop: '2.5rem' }}>
@@ -80,7 +79,7 @@ const Humidite = () => {
                 ))}
               </ul>
             </motion.div>
-            <motion.div 
+            <motion.div
               className="map-container"
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
@@ -172,14 +171,14 @@ const Humidite = () => {
       <section style={{ padding: '8rem 0', background: 'var(--dark-surface)' }}>
         <div className="container">
           <div className="services-grid" style={{ gridTemplateColumns: '1fr 1fr' }}>
-            <motion.div 
+            <motion.div
               className="service-card"
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
               <AlertTriangle className="accent" size={40} style={{ marginBottom: '1.5rem' }} />
-              <h3 style={{ fontSize: '1.8rem' }}>DÉSHUMIDIFICATION <br/><span style={{ fontSize: '1.2rem', opacity: 0.7 }}>APRÈS DÉGÂT DES EAUX</span></h3>
+              <h3 style={{ fontSize: '1.8rem' }}>DÉSHUMIDIFICATION <br /><span style={{ fontSize: '1.2rem', opacity: 0.7 }}>APRÈS DÉGÂT DES EAUX</span></h3>
               <p style={{ margin: '1.5rem 0' }}>Séchage rapide essentiel pour éviter le développement systémique des moisissures.</p>
               <ul style={{ listStyle: 'none', padding: 0 }}>
                 <li style={{ marginBottom: '0.5rem' }}>• Déshumidificateurs professionnels</li>
@@ -188,14 +187,14 @@ const Humidite = () => {
               </ul>
             </motion.div>
 
-            <motion.div 
+            <motion.div
               className="service-card"
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
               <Wind className="accent" size={40} style={{ marginBottom: '1.5rem' }} />
-              <h3 style={{ fontSize: '1.8rem' }}>ASSAINISSEMENT <br/><span style={{ fontSize: '1.2rem', opacity: 0.7 }}>DE L'AIR INTÉRIEUR</span></h3>
+              <h3 style={{ fontSize: '1.8rem' }}>ASSAINISSEMENT <br /><span style={{ fontSize: '1.2rem', opacity: 0.7 }}>DE L'AIR INTÉRIEUR</span></h3>
               <p style={{ margin: '1.5rem 0' }}>Un air de mauvaise qualité favorise allergies et maux de tête chroniques.</p>
               <ul style={{ listStyle: 'none', padding: 0 }}>
                 <li style={{ marginBottom: '0.5rem' }}>• Nettoyage des systèmes de ventilation</li>
@@ -214,19 +213,19 @@ const Humidite = () => {
           <p style={{ color: 'rgba(0,0,0,0.8)', fontSize: '1.2rem', fontWeight: 'bold', marginBottom: '2rem' }}>
             Demandez votre devis gratuit en 48h par nos experts.
           </p>
-          <a href="/contact" style={{ 
-            display: 'inline-block', 
-            padding: '1.2rem 3rem', 
-            background: 'black', 
-            color: 'white', 
-            borderRadius: '50px', 
-            fontWeight: '900', 
+          <a href="/contact" style={{
+            display: 'inline-block',
+            padding: '1.2rem 3rem',
+            background: 'black',
+            color: 'white',
+            borderRadius: '50px',
+            fontWeight: '900',
             textDecoration: 'none',
             fontSize: '1.1rem',
             transition: 'var(--transition-smooth)'
           }}
-          onMouseOver={(e) => e.target.style.transform = 'scale(1.05)'}
-          onMouseOut={(e) => e.target.style.transform = 'scale(1)'}
+            onMouseOver={(e) => e.target.style.transform = 'scale(1.05)'}
+            onMouseOut={(e) => e.target.style.transform = 'scale(1)'}
           >
             FAIRE UNE DEMANDE
           </a>
