@@ -866,3 +866,187 @@ nav {
     font-size: 1.8rem;
   }
 }
+
+/* Premium Law Section */
+.legislation-section {
+  padding: 8rem 0;
+  background: radial-gradient(circle at center, #111 0%, var(--dark-bg) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.legislation-section::before {
+  content: '';
+  position: absolute;
+  top: -10%;
+  right: -5%;
+  width: 400px;
+  height: 400px;
+  background: var(--primary-green);
+  filter: blur(150px);
+  opacity: 0.05;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.premium-block-container {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  background: rgba(26, 26, 26, 0.6);
+  backdrop-filter: blur(20px);
+  border-radius: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.4);
+}
+
+.block-content {
+  padding: 4rem;
+  position: relative;
+}
+
+.block-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.block-icon-wrapper {
+  width: 80px;
+  height: 80px;
+  background: rgba(46, 204, 113, 0.1);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(46, 204, 113, 0.2);
+}
+
+.block-title-area {
+  display: flex;
+  flex-direction: column;
+}
+
+.block-title {
+  font-size: 2.5rem !important;
+  margin-bottom: 0.5rem;
+  line-height: 1;
+}
+
+.block-badge {
+  font-size: 0.8rem;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 0.4rem 1rem;
+  border-radius: 50px;
+  width: fit-content;
+  letter-spacing: 1px;
+  color: var(--text-gray);
+  font-weight: 600;
+}
+
+.block-intro {
+  font-size: 1.1rem;
+  color: var(--text-gray);
+  margin-bottom: 3rem;
+  line-height: 1.6;
+}
+
+.block-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.block-item {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 1.5rem 2rem;
+  border-radius: 20px;
+  border-left: 4px solid transparent;
+  transition: var(--transition-smooth);
+}
+
+.block-item:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-left-color: var(--primary-green);
+  transform: translateX(10px);
+}
+
+.block-item-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.block-item-target {
+  font-weight: 900;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+.block-item-content {
+  color: var(--text-gray);
+  font-size: 1rem;
+  padding-left: 2rem;
+}
+
+.block-footer-info {
+  background: var(--primary-green);
+  padding: 4rem;
+  display: flex;
+  align-items: center;
+  color: white;
+  position: relative;
+}
+
+.block-footer-info::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://www.transparenttextures.com/patterns/carbon-fibre.png');
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+.footer-card h3 {
+  font-size: 2rem !important;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+.footer-card p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  opacity: 0.9;
+}
+
+@media (max-width: 1024px) {
+  .premium-block-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .block-content {
+    padding: 3rem 2rem;
+  }
+  
+  .block-footer-info {
+    padding: 3rem 2rem;
+  }
+  
+  .block-title {
+    font-size: 1.8rem !important;
+  }
+  
+  .block-header {
+    gap: 1rem;
+  }
+  
+  .block-icon-wrapper {
+    width: 60px;
+    height: 60px;
+  }
+}

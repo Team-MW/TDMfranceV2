@@ -29,6 +29,7 @@ const Footer = () => {
             <li><Link to="/deratisation">Dératisation</Link></li>
             <li><Link to="/desinsectisation">Désinsectisation</Link></li>
             <li><Link to="/punaises-de-lit">Punaises de lit</Link></li>
+            <li><Link to="/humidite">Humidité</Link></li>
             <li><Link to="/contact">Contact & Devis</Link></li>
             <li><Link to="/traitement-nuisibles">Traitement Nuisibles</Link></li>
           </ul>
@@ -75,8 +76,6 @@ const Footer = () => {
           </p>
           <div className="legal-links">
             <Link to="/mentions-legales">Mentions Légales</Link>
-            <a href="#">Politique de Confidentialité</a>
-            <a href="#">Cookies</a>
           </div>
         </div>
       </div>

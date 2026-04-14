@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { Bug, Rat, Star, MessageSquare, MapPin } from 'lucide-react'
+import { Bug, Rat, Star, MessageSquare, MapPin, Droplets } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
 import { useNavigate } from 'react-router-dom'
@@ -11,6 +11,7 @@ const Home = () => {
     { title: 'DÉRATISATION', icon: <Rat size={32} />, path: '/deratisation', description: 'Solutions rapides pour rats, souris et rongeurs.' },
     { title: 'DÉSINSECTISATION', icon: <Bug size={32} />, path: '/desinsectisation', description: 'Élimination des blattes, cafards et fourmis.' },
     { title: 'PUNAISES DE LIT', icon: <Bug size={32} />, path: '/punaises-de-lit', description: 'Expertise spécialisée en éradication totale.' },
+    { title: 'HUMIDITÉ', icon: <Droplets size={32} />, path: '/humidite', description: 'Traitement des moisissures et diagnostic expert.' },
   ]
 
   return (

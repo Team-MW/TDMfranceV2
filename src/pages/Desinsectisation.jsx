@@ -78,39 +78,66 @@ const Desinsectisation = () => {
       </section>
 
       {/* Protocol Section */}
-      <section style={{ padding: '8rem 0', background: 'var(--dark-surface)' }}>
+      <section className="protocol-section" style={{ padding: '8rem 0' }}>
         <div className="container">
-          <div className="intervention-grid">
-            <motion.div 
-              style={{ background: 'var(--dark-bg)', padding: '3rem', borderRadius: '30px', border: '1px solid rgba(255,255,255,0.05)' }}
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-            >
-              <AlertCircle className="accent" size={50} style={{ marginBottom: '1.5rem' }} />
-              <h2 style={{ fontSize: '2rem', marginBottom: '1.5rem' }}>LA <span className="accent">MENACE</span> INVISIBLE</h2>
-              <p style={{ color: 'var(--text-gray)', marginBottom: '1.5rem' }}>
+          <motion.div 
+            className="premium-block-container"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+          >
+            <div className="block-content">
+              <div className="block-header">
+                <div className="block-icon-wrapper">
+                  <AlertCircle className="accent" size={40} />
+                </div>
+                <div className="block-title-area">
+                  <h2 className="block-title">LA <span className="accent">MENACE</span> INVISIBLE</h2>
+                  <div className="block-badge">INTERVENTION DE CHOC</div>
+                </div>
+              </div>
+
+              <p className="block-intro">
                 Saviez-vous que si vous voyez un cafard en plein jour, c'est que le nid est déjà saturé ?
               </p>
-              <ul style={{ color: 'var(--text-white)', listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                <li style={{ display: 'flex', gap: '10px' }}><Target size={18} className="accent" /> <strong>Traitement par Gel :</strong> Application précise sans odeur et sans évacuation.</li>
-                <li style={{ display: 'flex', gap: '10px' }}><Target size={18} className="accent" /> <strong>Nébulisation :</strong> Pour les volumes importants et infestations massives.</li>
-                <li style={{ display: 'flex', gap: '10px' }}><Target size={18} className="accent" /> <strong>Destruction de nids :</strong> Guêpes et frelons asiatiques même à grande hauteur.</li>
-              </ul>
-            </motion.div>
 
-            <motion.div 
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}
-            >
-              <h3 style={{ fontSize: '2rem', marginBottom: '1rem' }}>UNE MÉTHODE SCIENTIFIQUE</h3>
-              <p style={{ color: 'var(--text-gray)', fontSize: '1.1rem', lineHeight: '1.8' }}>
-                Nous n'utilisons pas de simples insecticides du commerce. Nos molécules professionnelles ciblent le système nerveux des insectes et profitent de leur comportement social (nécrophagie) pour contaminer l'ensemble de la colonie jusqu'au cœur du nid.
-              </p>
-            </motion.div>
-          </div>
+              <div className="block-grid">
+                <div className="block-item">
+                  <div className="block-item-header">
+                    <Target size={20} className="accent" />
+                    <span className="block-item-target">TRAITEMENT PAR GEL</span>
+                  </div>
+                  <p className="block-item-content">Application précise sans odeur et sans évacuation des locaux.</p>
+                </div>
+
+                <div className="block-item">
+                  <div className="block-item-header">
+                    <Target size={20} className="accent" />
+                    <span className="block-item-target">NÉBULISATION / BRUMISATION</span>
+                  </div>
+                  <p className="block-item-content">Traitement des volumes importants et des infestations massives.</p>
+                </div>
+
+                <div className="block-item">
+                  <div className="block-item-header">
+                    <Target size={20} className="accent" />
+                    <span className="block-item-target">DESTRUCTION DE NIDS</span>
+                  </div>
+                  <p className="block-item-content">Guêpes et frelons asiatiques même à grande hauteur ou accès difficiles.</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="block-footer-info">
+              <div className="footer-card">
+                <h3>MÉTHODE SCIENTIFIQUE</h3>
+                <p>
+                  Nous n'utilisons pas de simples insecticides du commerce. Nos molécules professionnelles ciblent le système nerveux des insectes et profitent de leur comportement social (nécrophagie) pour contaminer l'ensemble de la colonie jusqu'au cœur du nid.
+                </p>
+              </div>
+            </div>
+          </motion.div>
         </div>
       </section>
 

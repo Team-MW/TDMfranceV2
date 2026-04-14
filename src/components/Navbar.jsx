@@ -8,7 +8,16 @@ const Navbar = () => {
   return (
     <nav className={isOpen ? 'nav-open' : ''}>
       <div className="container nav-content">
-        <Link to="/" className="logo" onClick={() => setIsOpen(false)}>
+        <Link 
+          to="/" 
+          className="logo" 
+          onClick={() => {
+            setIsOpen(false);
+            if (window.location.pathname === '/') {
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+          }}
+        >
           TDM <span>FRANCE</span>
         </Link>
         
@@ -18,10 +27,10 @@ const Navbar = () => {
         </button>
 
         <div className={`nav-links ${isOpen ? 'active' : ''}`}>
-          <Link to="/" onClick={() => setIsOpen(false)}>Accueil</Link>
           <Link to="/deratisation" onClick={() => setIsOpen(false)}>Dératisation</Link>
           <Link to="/desinsectisation" onClick={() => setIsOpen(false)}>Désinsectisation</Link>
           <Link to="/punaises-de-lit" onClick={() => setIsOpen(false)}>Punaises de lit</Link>
+          <Link to="/humidite" onClick={() => setIsOpen(false)}>Humidité</Link>
           <Link to="/contact" onClick={() => setIsOpen(false)}>Contact</Link>
           
           <div className="mobile-only-contact">

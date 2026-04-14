@@ -6,6 +6,7 @@ import Home from './pages/Home'
 import Deratisation from './pages/Deratisation'
 import Desinsectisation from './pages/Desinsectisation'
 import PunaisesDeLit from './pages/PunaisesDeLit'
+import Humidite from './pages/Humidite'
 import MentionsLegales from './pages/MentionsLegales'
 import Contact from './pages/Contact'
 import CityPage from './pages/CityPage'
@@ -25,6 +26,7 @@ const App = () => {
             <Route path="/deratisation" element={<Deratisation />} />
             <Route path="/desinsectisation" element={<Desinsectisation />} />
             <Route path="/punaises-de-lit" element={<PunaisesDeLit />} />
+            <Route path="/humidite" element={<Humidite />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/mentions-legales" element={<MentionsLegales />} />
             <Route path="/secteur/:cityId" element={<CityPage />} />

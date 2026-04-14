@@ -78,40 +78,67 @@ const Deratisation = () => {
       </section>
 
       {/* Legislation Section */}
-      <section style={{ padding: '8rem 0', background: 'var(--dark-surface)' }}>
+      <section className="legislation-section">
         <div className="container">
-          <div className="intervention-grid">
-            <motion.div 
-              style={{ background: 'var(--dark-bg)', padding: '3rem', borderRadius: '30px', border: '1px solid rgba(255,255,255,0.05)' }}
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-            >
-              <FileText className="accent" size={50} style={{ marginBottom: '1.5rem' }} />
-              <h2 style={{ fontSize: '2rem', marginBottom: '1.5rem' }}>CE QUE DIT LA <span className="accent">LOI</span></h2>
-              <p style={{ color: 'var(--text-gray)', marginBottom: '1.5rem' }}>
+          <motion.div 
+            className="premium-block-container"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+          >
+            <div className="block-content">
+              <div className="block-header">
+                <div className="block-icon-wrapper">
+                  <FileText className="accent" size={40} />
+                </div>
+                <div className="block-title-area">
+                  <h2 className="block-title">CE QUE DIT <span className="accent">LA LOI</span></h2>
+                  <div className="block-badge">RÈGLEMENT SANITAIRE DÉPARTEMENTAL</div>
+                </div>
+              </div>
+
+              <p className="block-intro">
                 Le Règlement Sanitaire Départemental oblige les propriétaires et locataires à prendre toutes les mesures pour éviter l'introduction des rongeurs.
               </p>
-              <ul style={{ color: 'var(--text-white)', listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                <li style={{ display: 'flex', gap: '10px' }}><CheckCircle size={18} className="accent" /> <strong>Restaurants / Commerces :</strong> Obligation de plan de lutte contre les nuisibles (Norme HACCP).</li>
-                <li style={{ display: 'flex', gap: '10px' }}><CheckCircle size={18} className="accent" /> <strong>Syndics :</strong> Responsabilité pénale en cas d'infestation prolongée non traitée.</li>
-                <li style={{ display: 'flex', gap: '10px' }}><CheckCircle size={18} className="accent" /> <strong>Particuliers :</strong> Obligation de maintien de l'insalubrité publique.</li>
-              </ul>
-            </motion.div>
 
-            <motion.div 
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}
-            >
-              <h3 style={{ fontSize: '2rem', marginBottom: '1rem' }}>PROTECTION TOTALE</h3>
-              <p style={{ color: 'var(--text-gray)', fontSize: '1.1rem', lineHeight: '1.8' }}>
-                Une infestation de rats peut détruire la réputation d'un établissement en quelques heures. 
-                Nos contrats de maintenance vous assurent une sérénité totale tout au long de l'année avec un suivi rigoureux et des rapports d'intervention conformes aux contrôles hygiène.
-              </p>
-            </motion.div>
-          </div>
+              <div className="block-grid">
+                <div className="block-item">
+                  <div className="block-item-header">
+                    <CheckCircle size={20} className="accent" />
+                    <span className="block-item-target">RESTAURANTS / COMMERCES</span>
+                  </div>
+                  <p className="block-item-content">Obligation de plan de lutte contre les nuisibles (Norme HACCP).</p>
+                </div>
+
+                <div className="block-item">
+                  <div className="block-item-header">
+                    <CheckCircle size={20} className="accent" />
+                    <span className="block-item-target">SYNDICS DE COPROPRIÉTÉ</span>
+                  </div>
+                  <p className="block-item-content">Responsabilité pénale engagée en cas d'infestation prolongée non traitée.</p>
+                </div>
+
+                <div className="block-item">
+                  <div className="block-item-header">
+                    <CheckCircle size={20} className="accent" />
+                    <span className="block-item-target">PARTICULIERS</span>
+                  </div>
+                  <p className="block-item-content">Obligation de maintien de la salubrité publique et protection du voisinage.</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="block-footer-info">
+              <div className="footer-card">
+                <h3>PROTECTION TOTALE</h3>
+                <p>
+                  Une infestation de rats peut détruire la réputation d'un établissement en quelques heures. 
+                  Nos contrats de maintenance vous assurent une sérénité totale tout au long de l'année avec un suivi rigoureux et des rapports d'intervention conformes aux contrôles hygiène.
+                </p>
+              </div>
+            </div>
+          </motion.div>
         </div>
       </section>
 

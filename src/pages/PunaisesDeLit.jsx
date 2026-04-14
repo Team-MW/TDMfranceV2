@@ -78,39 +78,66 @@ const PunaisesDeLit = () => {
       </section>
 
       {/* Advice Section */}
-      <section style={{ padding: '8rem 0', background: 'var(--dark-surface)' }}>
+      <section className="advice-section" style={{ padding: '8rem 0' }}>
         <div className="container">
-          <div className="intervention-grid">
-            <motion.div 
-              style={{ background: 'var(--dark-bg)', padding: '3rem', borderRadius: '30px', border: '1px solid rgba(255,255,255,0.05)' }}
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-            >
-              <Info className="accent" size={50} style={{ marginBottom: '1.5rem' }} />
-              <h2 style={{ fontSize: '2rem', marginBottom: '1.5rem' }}>LES BONS <span className="accent">REFLEXES</span></h2>
-              <p style={{ color: 'var(--text-gray)', marginBottom: '1.5rem' }}>
+          <motion.div 
+            className="premium-block-container"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+          >
+            <div className="block-content">
+              <div className="block-header">
+                <div className="block-icon-wrapper">
+                  <Info className="accent" size={40} />
+                </div>
+                <div className="block-title-area">
+                  <h2 className="block-title">LES BONS <span className="accent">RÉFLEXES</span></h2>
+                  <div className="block-badge">PROTOCOLE PRÉ-INTERVENTION</div>
+                </div>
+              </div>
+
+              <p className="block-intro">
                 En cas de suspicion, voici les étapes cruciales à suivre avant notre arrivée :
               </p>
-              <ul style={{ color: 'var(--text-white)', listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                <li style={{ display: 'flex', gap: '10px' }}><Search size={18} className="accent" /> <strong>Ne déménagez rien :</strong> Ne changez pas de chambre pour dormir ailleurs, elles vous suivront.</li>
-                <li style={{ display: 'flex', gap: '10px' }}><Search size={18} className="accent" /> <strong>Lavage à 60°C :</strong> Lavez votre linge de lit et vêtements à haute température.</li>
-                <li style={{ display: 'flex', gap: '10px' }}><Search size={18} className="accent" /> <strong>Aspiration :</strong> Aspirez minutieusement et jetez immédiatement le sac dans une poubelle extérieure.</li>
-              </ul>
-            </motion.div>
 
-            <motion.div 
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}
-            >
-              <h3 style={{ fontSize: '2rem', marginBottom: '1rem' }}>DOUBLE TRAITEMENT</h3>
-              <p style={{ color: 'var(--text-gray)', fontSize: '1.1rem', lineHeight: '1.8' }}>
-                Le cycle de vie de la punaise de lit est complexe. Les œufs sont extrêmement résistants aux produits chimiques. C'est pourquoi nous préconisons systématiquement deux passages : le premier pour éradiquer les adultes et larves, le second 15 jours plus tard pour neutraliser les nouvelles éclosions.
-              </p>
-            </motion.div>
-          </div>
+              <div className="block-grid">
+                <div className="block-item">
+                  <div className="block-item-header">
+                    <Search size={20} className="accent" />
+                    <span className="block-item-target">NE DÉMÉNAGEZ RIEN</span>
+                  </div>
+                  <p className="block-item-content">Ne changez pas de chambre pour dormir ailleurs, les punaises vous suivraient dans les autres pièces.</p>
+                </div>
+
+                <div className="block-item">
+                  <div className="block-item-header">
+                    <Search size={20} className="accent" />
+                    <span className="block-item-target">LAVAGE À 60°C</span>
+                  </div>
+                  <p className="block-item-content">Lavez votre linge de lit et vos vêtements à haute température pour éliminer œufs et adultes.</p>
+                </div>
+
+                <div className="block-item">
+                  <div className="block-item-header">
+                    <Search size={20} className="accent" />
+                    <span className="block-item-target">ASPIRATION MINUTIEUSE</span>
+                  </div>
+                  <p className="block-item-content">Aspirez les coutures du matelas et jetez immédiatement le sac dans une poubelle extérieure.</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="block-footer-info">
+              <div className="footer-card">
+                <h3>DOUBLE TRAITEMENT</h3>
+                <p>
+                  Le cycle de vie de la punaise de lit est complexe. Les œufs sont extrêmement résistants aux produits chimiques. C'est pourquoi nous préconisons systématiquement deux passages pour neutraliser les nouvelles éclosions.
+                </p>
+              </div>
+            </div>
+          </motion.div>
         </div>
       </section>
 
