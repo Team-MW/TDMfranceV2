@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Mail, Phone, MapPin, Clock, Loader2, ShieldCheck, Activity } from 'lucide-react'
+import { Mail, Phone, MapPin, Clock, Loader2, ShieldCheck, Activity, Search, CheckCircle } from 'lucide-react'
 const Contact = () => {
   const containerRef = useRef(null)
   const [loading, setLoading] = useState(true)
@@ -151,35 +151,76 @@ const Contact = () => {
           >
             <div className="block-content" style={{ padding: '4rem' }}>
               <h2 className="block-title" style={{ marginBottom: '2rem' }}>À PROPOS DE <span className="accent">TDM FRANCE</span></h2>
-              <p className="block-intro" style={{ marginBottom: '3rem' }}>
-                TDM FRANCE est le leader de la lutte antiparasitaire en Haute-Garonne. Notre mission est de protéger votre santé, vos biens et votre environnement grâce à des technologies de pointe et une expertise certifiée.
-              </p>
               
-              <div className="law-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '2rem' }}>
-                <div className="about-feature">
-                  <ShieldCheck className="accent" size={32} style={{ marginBottom: '1rem' }} />
-                  <h4 style={{ color: 'white', marginBottom: '0.5rem' }}>CERTIFIÉ BIOCIDE</h4>
-                  <p style={{ color: 'var(--text-gray)', fontSize: '0.9rem' }}>Utilisation raisonnée et sécurisée de molécules professionnelles homologuées.</p>
+              <div style={{ marginBottom: '3rem' }}>
+                <p className="block-intro" style={{ marginBottom: '1.5rem', fontSize: '1.1rem' }}>
+                  TDM FRANCE est une entreprise spécialisée dans le traitement et la désinfection des moisissures à Toulouse et dans toute la Haute-Garonne. Notre mission est simple : vous offrir un environnement sain, durable et sécurisé, que ce soit dans votre logement, vos bureaux, vos locaux commerciaux ou vos parties communes.
+                </p>
+                <p style={{ color: 'var(--text-gray)', lineHeight: '1.8' }}>
+                  Nous savons à quel point les problèmes d’humidité et de moisissures peuvent impacter la santé, le confort et la valeur d’un bien immobilier. C’est pourquoi nous avons développé une expertise unique pour traiter les causes en profondeur et garantir des résultats durables.
+                </p>
+              </div>
+
+              <div className="commitments-area" style={{ marginBottom: '4rem' }}>
+                <h3 style={{ fontSize: '1.5rem', marginBottom: '2rem', color: 'white' }}>Nos Engagements</h3>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
+                  <div className="block-item" style={{ padding: '1.5rem' }}>
+                    <div className="block-item-header">
+                      <Clock size={20} className="accent" />
+                      <span className="block-item-target">RÉACTIVITÉ</span>
+                    </div>
+                    <p className="block-item-content">Réponse rapide à vos demandes, avec un devis gratuit sous 48h.</p>
+                  </div>
+                  <div className="block-item" style={{ padding: '1.5rem' }}>
+                    <div className="block-item-header">
+                      <Search size={20} className="accent" />
+                      <span className="block-item-target">PRÉCISION</span>
+                    </div>
+                    <p className="block-item-content">Diagnostic précis et détaillé grâce à nos outils professionnels.</p>
+                  </div>
+                  <div className="block-item" style={{ padding: '1.5rem' }}>
+                    <div className="block-item-header">
+                      <ShieldCheck size={20} className="accent" />
+                      <span className="block-item-target">NORMES</span>
+                    </div>
+                    <p className="block-item-content">Utilisation de produits homologués et respectueux des normes.</p>
+                  </div>
+                  <div className="block-item" style={{ padding: '1.5rem' }}>
+                    <div className="block-item-header">
+                      <Activity size={20} className="accent" />
+                      <span className="block-item-target">SUIVI</span>
+                    </div>
+                    <p className="block-item-content">Accompagnement rigoureux pour garantir un résultat durable.</p>
+                  </div>
                 </div>
-                <div className="about-feature">
-                  <MapPin className="accent" size={32} style={{ marginBottom: '1rem' }} />
-                  <h4 style={{ color: 'white', marginBottom: '0.5rem' }}>PROXIMITÉ TOTALE</h4>
-                  <p style={{ color: 'var(--text-gray)', fontSize: '0.9rem' }}>Intervention en moins de 24h sur Toulouse et toute la Haute-Garonne.</p>
-                </div>
-                <div className="about-feature">
-                  <Activity className="accent" size={32} style={{ marginBottom: '1rem' }} />
-                  <h4 style={{ color: 'white', marginBottom: '0.5rem' }}>RÉSULTAT GARANTI</h4>
-                  <p style={{ color: 'var(--text-gray)', fontSize: '0.9rem' }}>Protocoles d'éradication radicaux avec suivi post-intervention rigoureux.</p>
+              </div>
+
+              <div className="team-clients">
+                <h3 style={{ fontSize: '1.5rem', marginBottom: '1.5rem', color: 'white' }}>Une équipe qualifiée à votre service</h3>
+                <p style={{ color: 'var(--text-gray)', lineHeight: '1.8', marginBottom: '2rem' }}>
+                  Notre équipe est composée de techniciens expérimentés, formés aux dernières techniques de traitement de l’humidité, de désinfection et d’assainissement de l’air.
+                </p>
+                <div style={{ background: 'rgba(255,255,255,0.02)', padding: '2rem', borderRadius: '20px', border: '1px solid rgba(255,255,255,0.05)' }}>
+                  <h4 style={{ marginBottom: '1rem', color: 'var(--primary-green)' }}>Nous accompagnons :</h4>
+                  <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.8rem', color: 'var(--text-white)' }}>
+                    <li style={{ display: 'flex', gap: '10px' }}><CheckCircle size={18} className="accent" /> Les particuliers (maisons, appartements, caves, salles de bain)</li>
+                    <li style={{ display: 'flex', gap: '10px' }}><CheckCircle size={18} className="accent" /> Les professionnels (bureaux, commerces, restaurants, santé)</li>
+                    <li style={{ display: 'flex', gap: '10px' }}><CheckCircle size={18} className="accent" /> Les syndics de copropriété et collectivités</li>
+                  </ul>
                 </div>
               </div>
             </div>
 
-            <div className="block-footer-info" style={{ background: 'var(--dark-surface)', borderLeft: '1px solid rgba(255,255,255,0.05)' }}>
-               <div className="footer-card">
-                  <h3 style={{ fontSize: '1.5rem !important' }}>NOTRE PHILOSOPHIE</h3>
-                  <p style={{ color: 'var(--text-gray)', fontSize: '1rem', lineHeight: '1.8' }}>
-                    Nous croyons qu'un environnement sain est un droit fondamental. C'est pourquoi nous investissons constamment dans des solutions durables et des méthodes qui respectent votre cadre de vie tout en étant impitoyables avec les nuisibles.
+            <div className="block-footer-info" style={{ background: 'var(--dark-surface)', borderLeft: '1px solid rgba(255,255,255,0.05)', display: 'flex', alignItems: 'center' }}>
+               <div className="footer-card" style={{ padding: '3rem' }}>
+                  <h3 style={{ fontSize: '1.5rem !important', marginBottom: '1.5rem' }}>PHILOSOPHIE</h3>
+                  <p style={{ color: 'var(--text-gray)', fontSize: '1rem', lineHeight: '2' }}>
+                    Chez TDM FRANCE, nous croyons que chaque client mérite une solution personnalisée. Chaque intervention est réalisée avec le souci du détail et le respect total des occupants et des lieux.
                   </p>
+                  <div className="availability" style={{ marginTop: '2rem' }}>
+                    <ShieldCheck size={18} className="accent" />
+                    <span>Expertise Certifiée Haute-Garonne</span>
+                  </div>
                </div>
             </div>
           </motion.div>
