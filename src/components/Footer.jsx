@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { MapPin, Phone, Mail, Facebook, Instagram, Linkedin, ShieldCheck } from 'lucide-react'
+import { MapPin, Phone, Mail, ShieldCheck } from 'lucide-react'
 
 const Footer = () => {
   return (
@@ -15,11 +15,6 @@ const Footer = () => {
             Experts en dératisation et désinsectisation à Toulouse. 
             Protection radicale et durable de votre environnement.
           </p>
-          <div className="social-links">
-            <a href="#" className="social-icon"><Facebook size={20} /></a>
-            <a href="#" className="social-icon"><Instagram size={20} /></a>
-            <a href="#" className="social-icon"><Linkedin size={20} /></a>
-          </div>
         </div>
 
         {/* Links Section */}
