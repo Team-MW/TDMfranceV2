@@ -25,6 +25,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://tdmfrance.fr/humidite</loc>
+    <lastmod>2026-04-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://tdmfrance.fr/mentions-legales</loc>
     <lastmod>2026-04-13</lastmod>
     <changefreq>monthly</changefreq>
