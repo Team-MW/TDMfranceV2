@@ -2,6 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { Bug, Droplets, Target, ShieldAlert, Thermometer, Wind, AlertCircle } from 'lucide-react'
 import FAQ from '../components/FAQ'
+import CityLinks from '../components/CityLinks'
 
 const Desinsectisation = () => {
   const faqs = [
@@ -140,6 +141,9 @@ const Desinsectisation = () => {
           </motion.div>
         </div>
       </section>
+
+      {/* City Sections */}
+      <CityLinks service="desinsectisation" />
 
       {/* FAQ Section */}
       <FAQ title="Désinsectisation" questions={faqs} />

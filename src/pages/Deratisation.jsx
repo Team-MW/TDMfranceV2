@@ -2,6 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { Rat, Shield, CheckCircle, AlertTriangle, FileText, Zap, HeartPulse } from 'lucide-react'
 import FAQ from '../components/FAQ'
+import CityLinks from '../components/CityLinks'
 
 const Deratisation = () => {
   const faqs = [
@@ -141,6 +142,9 @@ const Deratisation = () => {
           </motion.div>
         </div>
       </section>
+
+      {/* City Sections */}
+      <CityLinks service="deratisation" />
 
       {/* FAQ Section */}
       <FAQ title="Dératisation" questions={faqs} />

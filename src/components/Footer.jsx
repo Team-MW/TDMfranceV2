@@ -9,7 +9,7 @@ const Footer = () => {
         {/* Brand Section */}
         <div className="footer-col brand">
           <Link to="/" className="logo">
-            TDM <span>FRANCE</span>
+            <img src="/logo.png" alt="TDM France" />
           </Link>
           <p className="footer-tagline">
             Experts en dératisation et désinsectisation à Toulouse. 

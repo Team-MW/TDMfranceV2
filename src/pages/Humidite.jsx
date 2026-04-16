@@ -2,6 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { Droplets, Wind, Home, ShieldCheck, Search, Activity, AlertTriangle, CheckCircle2, Thermometer, Fan, Zap, Clock } from 'lucide-react'
 import FAQ from '../components/FAQ'
+import CityLinks from '../components/CityLinks'
 
 const Humidite = () => {
   const faqs = [
@@ -231,6 +232,9 @@ const Humidite = () => {
           </a>
         </div>
       </section>
+
+      {/* City Sections */}
+      <CityLinks service="humidite" />
 
       {/* FAQ Section */}
       <FAQ title="Expertise Humidité" questions={faqs} />

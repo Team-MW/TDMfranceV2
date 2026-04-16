@@ -79,7 +79,7 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 1.5rem 0;
+  padding: 0;
   background: rgba(10, 10, 10, 0.8);
   backdrop-filter: blur(10px);
   z-index: 1000;
@@ -98,6 +98,15 @@ nav {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+}
+
+.logo img {
+  height: 160px;
+  width: auto;
+  transition: var(--transition-smooth);
+  display: block;
+  margin-top: -40px;
+  margin-bottom: -40px;
 }
 
 .logo span {
@@ -176,6 +185,12 @@ nav {
     font-size: 1.4rem !important;
   }
 
+  .logo img {
+    height: 110px !important;
+    margin-top: -25px;
+    margin-bottom: -25px;
+  }
+
   .nav-links {
     display: none;
   }
@@ -192,7 +207,7 @@ nav {
   .hero {
     height: auto;
     min-height: 100vh;
-    padding: 8rem 0 4rem 0;
+    padding: 15rem 0 4rem 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -232,16 +247,19 @@ nav {
   }
 
   .sector-info {
-    margin-top: 2rem !important;
+    margin-top: 3rem !important;
+    margin-bottom: 3rem !important;
   }
 
   .sector-info h3 {
-    font-size: 0.9rem !important;
+    font-size: 1rem !important;
+    opacity: 0.8;
   }
 
   .sector-info p {
-    font-size: 1.1rem !important;
-    margin-top: 0.5rem;
+    font-size: 1.5rem !important;
+    margin-top: 0.8rem;
+    color: var(--primary-green) !important;
   }
 
   .rating-box {
@@ -343,7 +361,7 @@ nav {
   align-items: center;
   position: relative;
   overflow: hidden;
-  padding-top: 80px;
+  padding-top: 200px;
 }
 
 .hero-content-mini {
@@ -368,7 +386,7 @@ nav {
 @media (max-width: 768px) {
   .service-hero-premium {
     height: auto;
-    padding: 120px 0 60px 0;
+    padding: 220px 0 60px 0;
     text-align: center;
   }
   
@@ -1050,3 +1068,47 @@ nav {
     height: 60px;
   }
 }
+
+/* New Responsive Utilities */
+.responsive-city-title {
+  font-size: clamp(2rem, 5vw, 4rem) !important;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+.responsive-city-text {
+  font-size: clamp(1rem, 2vw, 1.2rem) !important;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .mobile-section-padding {
+    padding: 4rem 0 !important;
+  }
+  
+  .mobile-surface-padding {
+    padding: 2rem !important;
+  }
+
+  .section-title h2 {
+    font-size: 2.2rem !important;
+    line-height: 1.2;
+    word-break: break-word;
+  }
+
+  .intervention-zone h2 .accent {
+    display: block;
+  }
+}
+
+.sector-info p {
+  text-shadow: 0 0 20px rgba(46, 204, 113, 0.3);
+}
+
+.city-tag span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+

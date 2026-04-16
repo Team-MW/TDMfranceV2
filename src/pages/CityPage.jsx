@@ -5,11 +5,32 @@ import { MapPin, ShieldCheck, Zap, Phone, ArrowRight, CheckCircle } from 'lucide
 import { cityData } from '../data/cities'
 
 const CityPage = () => {
-  const { cityId } = useParams()
+  const { cityId, service = 'deratisation' } = useParams()
   // Conversion en minuscules pour assurer la correspondance avec les clés de cityData
   const city = cityData[cityId?.toLowerCase()]
 
-  console.log("Loading city page for:", cityId)
+  const serviceInfo = {
+    'deratisation': {
+      title: 'DÉRATISATION & DÉSINSECTISATION',
+      hero: '/hero.png',
+      desc: 'Expertise locale en éradication de rongeurs et insectes.'
+    },
+    'desinsectisation': {
+      title: 'DÉSINSECTISATION EXPERTE',
+      hero: '/hero-desinsectisation.png',
+      desc: 'Élimination totale de blattes, cafards, fourmis et autres insectes.'
+    },
+    'punaises-de-lit': {
+      title: 'PUNAISES DE LIT',
+      hero: '/hero-punaises.png',
+      desc: 'Traitement radical contre les punaises de lit pour un sommeil paisible.'
+    },
+    'humidite': {
+      title: 'HUMIDITÉ & MOISISSURES',
+      hero: '/hero-humidite.png',
+      desc: 'Diagnostic et traitement définitif des problèmes d\'humidité.'
+    }
+  }[service] || serviceInfo['deratisation']
 
   if (!city) {
     return (
@@ -25,7 +46,7 @@ const CityPage = () => {
     <div className="city-page">
       <section className="service-hero-premium">
         <div className="hero-bg">
-          <img src="/hero.png" alt={`Dératisation ${city.name}`} />
+          <img src={serviceInfo.hero} alt={`${serviceInfo.title} ${city.name}`} />
           <div className="hero-overlay"></div>
         </div>
         <div className="container" style={{ position: 'relative', zIndex: 10 }}>
@@ -35,8 +56,11 @@ const CityPage = () => {
             className="hero-content-mini"
           >
             <span className="accent" style={{ fontSize: '1.2rem', fontWeight: '800' }}>INTERVENTION 31</span>
-            <h1 style={{ marginTop: '0.5rem' }}>DÉRATISATION & DÉSINSECTISATION À <span className="accent">{city.name.toUpperCase()}</span> ({city.zip.split(',')[0]})</h1>
-            <p>{city.description}</p>
+            <h1 className="responsive-city-title" style={{ marginTop: '0.5rem', lineHeight: '1.2' }}>
+              {serviceInfo.title} <br />
+              À <span className="accent">{city.name.toUpperCase()}</span> ({city.zip.split(',')[0]})
+            </h1>
+            <p className="responsive-city-text">{city.description}</p>
             <button className="cta-btn-refined" onClick={() => window.open('https://wa.me/33784819003')}>
               DEVIS GRATUIT {city.name.toUpperCase()}
             </button>
@@ -44,7 +68,7 @@ const CityPage = () => {
         </div>
       </section>
 
-      <section style={{ padding: '8rem 0' }}>
+      <section style={{ padding: '8rem 0' }} className="mobile-section-padding">
         <div className="container">
           <div className="intervention-grid">
             <div className="city-info-block">
@@ -67,7 +91,7 @@ const CityPage = () => {
               </ul>
             </div>
 
-            <div style={{ background: 'var(--dark-surface)', padding: '3rem', borderRadius: '30px' }}>
+            <div style={{ background: 'var(--dark-surface)', padding: '3rem', borderRadius: '30px' }} className="mobile-surface-padding">
               <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem', marginBottom: '2rem' }}>
                 <div style={{ background: 'var(--primary-green)', padding: '1rem', borderRadius: '15px' }}>
                   <MapPin color="white" size={30} />
@@ -86,7 +110,7 @@ const CityPage = () => {
         </div>
       </section>
 
-      <section style={{ padding: '8rem 0', background: 'var(--dark-surface)' }}>
+      <section style={{ padding: '8rem 0', background: 'var(--dark-surface)' }} className="mobile-section-padding">
         <div className="container">
           <div className="section-title">
             <h2>Nos Solutions à <span className="accent">{city.name}</span></h2>

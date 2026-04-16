@@ -28,17 +28,12 @@ const Home = () => {
             transition={{ duration: 0.8 }}
             className="hero-text"
           >
-            <h1 style={{ marginBottom: '0rem' }}>TDM FRANCE</h1>
-            <h1 className="highlight-red" style={{ fontSize: '4.5rem', marginBottom: '0.5rem' }}>ERADICATION<br />INSECTICIDE</h1>
+            <img src="/logo.png" alt="TDM France" style={{ height: '180px', width: 'auto', marginBottom: '0.5rem' }} />
+            <h1 className="highlight-red" style={{ fontSize: 'clamp(4.5rem, 12vw, 8.5rem)', lineHeight: '0.85', margin: '0 0 2rem 0' }}>ERADICATION<br />INSECTICIDE</h1>
 
-            <div className="whatsapp-bar" onClick={() => window.open('https://wa.me/33784819003')}>
-              <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WA" width="24" />
-              <span>+33 7 84 81 90 03</span>
-            </div>
-
-            <div className="sector-info" style={{ marginTop: '2rem' }}>
-               <h3 style={{ textDecoration: 'underline' }}>Secteur Disponible</h3>
-               <p style={{ color: '#fff', fontSize: '1.5rem', fontWeight: '900' }}>TOULOUSE & ALENTOURS</p>
+            <div className="whatsapp-bar" style={{ marginTop: '3rem' }} onClick={() => window.open('https://wa.me/33784819003')}>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WA" width="28" />
+              <span style={{ fontSize: '1.4rem' }}>+33 7 84 81 90 03</span>
             </div>
 
             <div className="rating-box">

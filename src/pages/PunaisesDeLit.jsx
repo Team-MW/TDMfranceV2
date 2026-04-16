@@ -2,6 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { ShieldAlert, Zap, Search, Bed, Brain, Users, Info } from 'lucide-react'
 import FAQ from '../components/FAQ'
+import CityLinks from '../components/CityLinks'
 
 const PunaisesDeLit = () => {
   const faqs = [
@@ -140,6 +141,9 @@ const PunaisesDeLit = () => {
           </motion.div>
         </div>
       </section>
+
+      {/* City Sections */}
+      <CityLinks service="punaises-de-lit" />
 
       {/* FAQ Section */}
       <FAQ title="Punaises de Lit" questions={faqs} />

@@ -18,7 +18,7 @@ const Navbar = () => {
             }
           }}
         >
-          TDM <span>FRANCE</span>
+          <img src="/logo.png" alt="TDM France" />
         </Link>
         
         {/* Mobile Toggle */}

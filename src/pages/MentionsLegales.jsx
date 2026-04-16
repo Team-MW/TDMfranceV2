@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 
 const MentionsLegales = () => {
   return (
-    <div className="mentions-legales-page" style={{ paddingTop: '10rem', paddingBottom: '5rem' }}>
+    <div className="mentions-legales-page" style={{ paddingTop: '18rem', paddingBottom: '5rem' }}>
       <div className="container">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -32,10 +32,9 @@ const MentionsLegales = () => {
               <h2 className="accent" style={{ fontSize: '1.5rem', marginBottom: '1rem', fontStyle: 'normal' }}>2. HÉBERGEMENT</h2>
               <p>
                 Le site est hébergé par :<br />
-                <strong>Infomaniak Network SA</strong><br />
-                • Adresse : Rue Eugène-Marziano 25, 1227 Les Acacias, Genève, Suisse<br />
-                • Téléphone : +41 22 820 35 44<br />
-                • Site : https://www.infomaniak.com
+                <strong>Vercel Inc.</strong><br />
+                • Adresse : 340 S Lemon Ave #4133, Walnut, CA 91789, États-Unis<br />
+                • Site : https://vercel.com
               </p>
             </section>
 
