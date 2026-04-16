@@ -21,8 +21,8 @@ const MentionsLegales = () => {
                 • Dénomination : TDM FRANCE<br />
                 • Statut juridique : Auto-entrepreneur<br />
                 • Siège social : Av. du Roucas, 31490 Léguevin, France<br />
-                • Numéro SIRET : [EN ATTENTE]<br />
-                • Numéro TVA intracommunautaire : [EN ATTENTE]<br />
+                • Numéro SIRET : 990 350 902 00013<br />
+                • Numéro TVA intracommunautaire : Non applicable (Auto-entrepreneur)<br />
                 • Responsable de la publication : M. Khamis Khelifa-Madjoubi<br />
                 • Contact : contact@tdm-france.com | 06 11 75 02 60
               </p>
