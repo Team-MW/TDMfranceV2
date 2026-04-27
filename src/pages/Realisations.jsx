@@ -9,7 +9,7 @@ const Realisations = () => {
   const videos = realisations.filter(file => file.endsWith('.mp4'))
 
   return (
-    <div className="realisations-page" style={{ paddingTop: '15rem', paddingBottom: '8rem', background: 'var(--dark-bg)' }}>
+    <div className="realisations-page">
       <div className="container">
         {/* Header */}
         <motion.div 
