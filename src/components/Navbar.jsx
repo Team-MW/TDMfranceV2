@@ -31,6 +31,7 @@ const Navbar = () => {
           <Link to="/desinsectisation" onClick={() => setIsOpen(false)}>Désinsectisation</Link>
           <Link to="/punaises-de-lit" onClick={() => setIsOpen(false)}>Punaises de lit</Link>
           <Link to="/humidite" onClick={() => setIsOpen(false)}>Humidité</Link>
+          <Link to="/realisations" onClick={() => setIsOpen(false)}>Nos Travaux</Link>
           <Link to="/contact" onClick={() => setIsOpen(false)}>Contact</Link>
           
           <div className="mobile-only-contact">

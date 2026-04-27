@@ -12,6 +12,7 @@ import Contact from './pages/Contact'
 import CityPage from './pages/CityPage'
 import ScrollToTop from './components/ScrollToTop'
 import WhatsAppButton from './components/WhatsAppButton'
+import Realisations from './pages/Realisations'
 
 const App = () => {
   return (
@@ -29,6 +30,7 @@ const App = () => {
             <Route path="/humidite" element={<Humidite />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/mentions-legales" element={<MentionsLegales />} />
+            <Route path="/realisations" element={<Realisations />} />
             <Route path="/secteur/:cityId" element={<CityPage />} />
             <Route path="/secteur/:service/:cityId" element={<CityPage />} />
           </Routes>
