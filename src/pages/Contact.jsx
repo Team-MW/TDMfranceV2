@@ -7,7 +7,7 @@ const Contact = () => {
 
   useEffect(() => {
     const script = document.createElement('script')
-    script.src = "https://form.jotform.com/jsform/252534710391352"
+    script.src = "https://form.jotform.com/jsform/261164619933361"
     script.type = "text/javascript"
     script.async = true
 
