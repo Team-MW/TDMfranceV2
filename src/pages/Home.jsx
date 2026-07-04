@@ -29,7 +29,7 @@ const Home = () => {
             transition={{ duration: 0.8 }}
             className="hero-text"
           >
-            <img src="/logo.png" alt="TDM France" style={{ height: '180px', width: 'auto', marginBottom: '0.5rem' }} />
+
             <h1 className="highlight-red" style={{ fontSize: 'clamp(4.5rem, 12vw, 8.5rem)', lineHeight: '0.85', margin: '0 0 2rem 0' }}>Traitement<br /><span style={{ color: 'var(--primary-green)' }}>Désinfection</span><br />Moisissure</h1>
 
             <div className="whatsapp-bar" style={{ marginTop: '3rem' }} onClick={() => navigate('/contact')}>

@@ -29,7 +29,7 @@ const Humidite = () => {
       {/* Hero Section */}
       <section className="service-hero-premium">
         <div className="hero-bg">
-          <img src="/hero-humidite.png" alt="Traitement Humidité et Moisissures Professionnel" />
+          <img src="/hero_desinfection.png" alt="Traitement Humidité et Moisissures Professionnel" />
           <div className="hero-overlay"></div>
         </div>
         <div className="container">
