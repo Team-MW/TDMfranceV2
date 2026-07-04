@@ -32,9 +32,9 @@ const Home = () => {
 
             <h1 className="highlight-red" style={{ fontSize: 'clamp(4.5rem, 12vw, 8.5rem)', lineHeight: '0.85', margin: '0 0 2rem 0' }}>Traitement<br /><span style={{ color: 'var(--primary-green)' }}>Désinfection</span><br />Moisissure</h1>
 
-            <div className="whatsapp-bar" style={{ marginTop: '3rem' }} onClick={() => navigate('/contact')}>
+            <div className="whatsapp-bar" style={{ marginTop: '3rem' }} onClick={() => navigate('/contact#formulaire-devis')}>
               <MessageSquare size={28} />
-              <span style={{ fontSize: '1.4rem' }}>Nous contacter</span>
+              <span style={{ fontSize: '1.4rem' }}>Demande de devis</span>
             </div>
 
             <div className="rating-box">

@@ -1,9 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Mail, Phone, MapPin, Clock, Loader2, ShieldCheck, Activity, Search, CheckCircle } from 'lucide-react'
+import { useLocation } from 'react-router-dom'
+
 const Contact = () => {
   const containerRef = useRef(null)
   const [loading, setLoading] = useState(true)
+  const location = useLocation()
 
   useEffect(() => {
     const script = document.createElement('script')
@@ -26,6 +29,17 @@ const Contact = () => {
       }
     }
   }, [])
+
+  useEffect(() => {
+    if (location.hash === '#formulaire-devis') {
+      const element = document.getElementById('formulaire-devis')
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth' })
+        }, 300)
+      }
+    }
+  }, [location])
 
   return (
     <div className="contact-page">
@@ -99,6 +113,7 @@ const Contact = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               className="form-container"
+              id="formulaire-devis"
             >
               <div className="service-card" style={{ padding: '1rem', position: 'relative', minHeight: '600px', display: 'flex', flexDirection: 'column' }}>
                 <AnimatePresence>

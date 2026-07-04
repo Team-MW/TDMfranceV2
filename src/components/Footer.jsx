@@ -72,6 +72,8 @@ const Footer = () => {
           </p>
           <div className="legal-links">
             <Link to="/mentions-legales">Mentions Légales</Link>
+            <span style={{ margin: '0 0.5rem', opacity: 0.6 }}>|</span>
+            <Link to="/politique-confidentialite">Politique de Confidentialité</Link>
           </div>
         </div>
       </div>

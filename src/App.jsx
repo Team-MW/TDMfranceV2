@@ -9,6 +9,7 @@ import PunaisesDeLit from './pages/PunaisesDeLit'
 import Humidite from './pages/Humidite'
 import DegraissageHotte from './pages/DegraissageHotte'
 import MentionsLegales from './pages/MentionsLegales'
+import PolitiqueConfidentialite from './pages/PolitiqueConfidentialite'
 import Contact from './pages/Contact'
 import CityPage from './pages/CityPage'
 import ScrollToTop from './components/ScrollToTop'
@@ -32,6 +33,7 @@ const App = () => {
             <Route path="/degraissage-hotte" element={<DegraissageHotte />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/mentions-legales" element={<MentionsLegales />} />
+            <Route path="/politique-confidentialite" element={<PolitiqueConfidentialite />} />
             <Route path="/realisations" element={<Realisations />} />
             <Route path="/secteur/:cityId" element={<CityPage />} />
             <Route path="/secteur/:service/:cityId" element={<CityPage />} />
