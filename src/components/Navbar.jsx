@@ -31,6 +31,7 @@ const Navbar = () => {
           <Link to="/desinsectisation" onClick={() => setIsOpen(false)}>Désinsectisation</Link>
           <Link to="/punaises-de-lit" onClick={() => setIsOpen(false)}>Punaises de lit</Link>
           <Link to="/humidite" onClick={() => setIsOpen(false)}>Humidité</Link>
+          <Link to="/degraissage-hotte" onClick={() => setIsOpen(false)}>Dégraissage Hotte</Link>
           <Link to="/realisations" onClick={() => setIsOpen(false)}>Nos Travaux</Link>
           <Link to="/contact" onClick={() => setIsOpen(false)}>Contact</Link>
           
@@ -39,10 +40,6 @@ const Navbar = () => {
                 <Phone size={18} /> Appeler maintenant
              </a>
           </div>
-        </div>
-
-        <div className="contact-btn">
-           <a href="tel:+33784819003" style={{ color: '#2ecc71', fontWeight: '900' }}>+33 7 84 81 90 03</a>
         </div>
       </div>
     </nav>

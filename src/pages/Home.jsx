@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { Bug, Rat, Star, MessageSquare, MapPin, Droplets } from 'lucide-react'
+import { Bug, Rat, Star, MessageSquare, MapPin, Droplets, Flame } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
 import { useNavigate } from 'react-router-dom'
@@ -12,6 +12,7 @@ const Home = () => {
     { title: 'DÉSINSECTISATION', icon: <Bug size={32} />, path: '/desinsectisation', description: 'Élimination des blattes, cafards et fourmis.' },
     { title: 'PUNAISES DE LIT', icon: <Bug size={32} />, path: '/punaises-de-lit', description: 'Expertise spécialisée en éradication totale.' },
     { title: 'HUMIDITÉ', icon: <Droplets size={32} />, path: '/humidite', description: 'Traitement des moisissures et diagnostic expert.' },
+    { title: 'DÉGRAISSAGE HOTTE', icon: <Flame size={32} />, path: '/degraissage-hotte', description: 'Nettoyage et mise aux normes de hotte professionnelle.' },
   ]
 
   return (
@@ -29,11 +30,11 @@ const Home = () => {
             className="hero-text"
           >
             <img src="/logo.png" alt="TDM France" style={{ height: '180px', width: 'auto', marginBottom: '0.5rem' }} />
-            <h1 className="highlight-red" style={{ fontSize: 'clamp(4.5rem, 12vw, 8.5rem)', lineHeight: '0.85', margin: '0 0 2rem 0' }}>ERADICATION<br />INSECTICIDE</h1>
+            <h1 className="highlight-red" style={{ fontSize: 'clamp(4.5rem, 12vw, 8.5rem)', lineHeight: '0.85', margin: '0 0 2rem 0' }}>Traitement<br /><span style={{ color: 'var(--primary-green)' }}>Désinfection</span><br />Moisissure</h1>
 
-            <div className="whatsapp-bar" style={{ marginTop: '3rem' }} onClick={() => window.open('https://wa.me/33784819003')}>
-              <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WA" width="28" />
-              <span style={{ fontSize: '1.4rem' }}>+33 7 84 81 90 03</span>
+            <div className="whatsapp-bar" style={{ marginTop: '3rem' }} onClick={() => navigate('/contact')}>
+              <MessageSquare size={28} />
+              <span style={{ fontSize: '1.4rem' }}>Nous contacter</span>
             </div>
 
             <div className="rating-box">

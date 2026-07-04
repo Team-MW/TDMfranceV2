@@ -132,6 +132,7 @@ nav {
   font-size: 0.9rem;
   opacity: 0.8;
   transition: var(--transition-smooth);
+  white-space: nowrap;
 }
 
 .nav-links a:hover {
@@ -166,41 +167,36 @@ nav {
   margin-top: 1rem;
 }
 
-@media (max-width: 768px) {
-  /* Global */
-  .container {
-    padding: 0 1.25rem;
-  }
-
-  /* Navigation */
+@media (max-width: 1200px) {
   nav {
     padding: 0.8rem 0 !important;
   }
-
   .nav-content {
     padding: 0 !important;
   }
-  
   .logo {
     font-size: 1.4rem !important;
   }
-
   .logo img {
     height: 110px !important;
     margin-top: -25px;
     margin-bottom: -25px;
   }
-
   .nav-links {
     display: none;
   }
-  
   .mobile-menu-btn {
     display: block;
   }
-  
   .contact-btn {
     display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Global */
+  .container {
+    padding: 0 1.25rem;
   }
 
   /* Hero Section - The Critical Part */

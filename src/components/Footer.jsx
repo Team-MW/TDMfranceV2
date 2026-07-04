@@ -25,6 +25,7 @@ const Footer = () => {
             <li><Link to="/desinsectisation">Désinsectisation</Link></li>
             <li><Link to="/punaises-de-lit">Punaises de lit</Link></li>
             <li><Link to="/humidite">Humidité</Link></li>
+            <li><Link to="/degraissage-hotte">Dégraissage Hotte</Link></li>
             <li><Link to="/contact">Contact & Devis</Link></li>
             <li><Link to="/traitement-nuisibles">Traitement Nuisibles</Link></li>
           </ul>
