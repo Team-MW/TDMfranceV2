@@ -87,7 +87,7 @@ const Humidite = () => {
               viewport={{ once: true }}
               style={{ position: 'relative', height: '400px', overflow: 'hidden' }}
             >
-              <img src="/hero-humidite.png" alt="Expertise moisissures" style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.8 }} />
+              <img src="/traitement_moisissures.png" alt="Expertise moisissures" style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.8 }} />
               <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to right, var(--dark-bg), transparent)' }}></div>
             </motion.div>
           </div>

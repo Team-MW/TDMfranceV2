@@ -16,7 +16,7 @@ const DegraissageHotte = () => {
       {/* Hero Section */}
       <section className="service-hero-premium">
         <div className="hero-bg">
-          <img src="/hero.png" alt="Dégraissage Hotte PRO" />
+          <img src="/hotte_degraissee.png" alt="Dégraissage Hotte PRO" />
           <div className="hero-overlay"></div>
         </div>
         <div className="container">
@@ -64,7 +64,7 @@ const DegraissageHotte = () => {
               viewport={{ once: true }}
               style={{ position: 'relative', height: '400px', overflow: 'hidden' }}
             >
-              <img src="/hero.png" alt="Dégraissage Hotte" style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.8 }} />
+              <img src="/hotte_degraissee.png" alt="Dégraissage Hotte" style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.8 }} />
               <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to right, var(--dark-bg), transparent)' }}></div>
             </motion.div>
           </div>
